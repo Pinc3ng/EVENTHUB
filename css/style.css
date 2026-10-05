@@ -1,0 +1,128 @@
+﻿/* ==========================================================
+   STYLE.CSS - EVENTHUB
+   Mahasiswa: Vincent (03082240020) - INF20053 UPH
+   ========================================================== */
+
+/* 1. Pengaturan Dasar & Box Model */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #334155;
+  background-color: #f8fafc;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Navigasi & Header */
+.navbar-nav .nav-link {
+  color: #cbd5e1 !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
+}
+
+/* 3. Kartu Workshop & Gambar (CSS Sendiri + Pseudo-class :hover) */
+.workshop-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #ffffff;
+}
+
+.workshop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.workshop-thumb {
+  height: 190px;
+  object-fit: cover;
+  background-color: #0f172a;
+}
+
+/* 4. Tabel Jadwal (Box Model: padding, border-collapse) */
+.custom-table {
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px 16px;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* 5. Form Kustom & Pseudo-class :focus */
+.form-control, .form-select { transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.2);
+  outline: none;
+}
+
+.custom-checkbox {
+  background-color: #ffffff;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.custom-checkbox:hover {
+  background-color: #f8fafc;
+  border-color: #94a3b8 !important;
+}
+
+/* 6. Ringkasan Pendaftaran (DOM Container) */
+#ringkasanBox {
+  background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);
+}
+
+/* 7. Responsive Media Query untuk Layar Mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .workshop-thumb {
+    height: 160px;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+
+/* Scroll padding untuk navbar sticky */
+html {
+  scroll-padding-top: 80px;
+}
+
+
+
+/* Kustom badge status pendaftaran */
+#ringkasanBox .badge {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+}
+
+
+/* Peningkatan kontras tombol outline */
+.btn-outline-primary:hover, .btn-outline-success:hover, .btn-outline-danger:hover {
+  color: #ffffff !important;
+}
