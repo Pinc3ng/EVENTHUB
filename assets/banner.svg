@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-label="Ilustrasi workshop">
+  <rect x="40" y="40" width="400" height="240" rx="18" fill="#ffffff" opacity="0.15"/>
+  <rect x="70" y="70" width="340" height="180" rx="10" fill="#1e1b4b"/>
+  <circle cx="92" cy="90" r="6" fill="#f87171"/>
+  <circle cx="112" cy="90" r="6" fill="#facc15"/>
+  <circle cx="132" cy="90" r="6" fill="#4ade80"/>
+  <text x="95" y="135" font-family="Consolas, monospace" font-size="20" fill="#a5b4fc">&lt;html&gt;</text>
+  <text x="120" y="165" font-family="Consolas, monospace" font-size="20" fill="#67e8f9">&lt;h1&gt;EVENTHUB&lt;/h1&gt;</text>
+  <text x="120" y="195" font-family="Consolas, monospace" font-size="20" fill="#86efac">{ css: "keren" }</text>
+  <text x="95" y="225" font-family="Consolas, monospace" font-size="20" fill="#a5b4fc">&lt;/html&gt;</text>
+  <rect x="200" y="250" width="80" height="14" fill="#ffffff" opacity="0.4"/>
+  <rect x="160" y="264" width="160" height="10" rx="5" fill="#ffffff" opacity="0.5"/>
+</svg>
